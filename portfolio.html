@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Хедер -->
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="navigation">
+          <!-- Логоптип -->
+          <a class="logo" href="/">Web<span class="logo__part logo__part--blacktext">Studio</span></a>
+
+          <!-- Навігація сайту -->
+          <ul class="list navigation__list">
+            <li class="item navigation__item">
+              <a class="link navigation__link" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="item navigation__item">
+              <a class="link navigation__link navigation__link--current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="item navigation__item">
+              <a class="link navigation__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Контакти хедер -->
+        <ul class="list contacts">
+          <li class="item contacts__item">
+            <a class="link contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-e-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item contacts__item">
+            <a class="link contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Головний контент сторінки Портфоліо -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <!-- Заголовок, сховати при оформленні -->
+          <h1 class="visually-hidden">Наші роботи</h1>
+
+          <!-- Портфоліо фільтри -->
+          <ul class="list portfolio-filters">
+            <li class="portfolio-filters__item">
+              <button class="button portfolio-filters__btn" type="button">Усі</button>
+            </li>
+
+            <li class="portfolio-filters__item">
+              <button class="button portfolio-filters__btn" type="button">Веб-сайти</button>
+            </li>
+
+            <li class="portfolio-filters__item">
+              <button class="button portfolio-filters__btn" type="button">Додатки</button>
+            </li>
+
+            <li class="portfolio-filters__item">
+              <button class="button portfolio-filters__btn" type="button">Дизайн</button>
+            </li>
+
+            <li class="portfolio-filters__item">
+              <button class="button portfolio-filters__btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Портфоліо -->
+          <ul class="list portfolio">
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-1.jpg"
+                    alt="Екран макбук з відкритою сторінкою веб-сайту"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Технокряк</h2>
+                  <p class="portfolio__app">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-2.jpg"
+                    alt="Два баскетболисти в боротьбі за м'яч"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio__app">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-3.jpg"
+                    alt="Назва ресторану на фоні намальованої риби"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Ресторан Seafood</h2>
+                  <p class="portfolio__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img src="./images/portfolio-4.jpg" alt="Повнорозмірні навушники" width="370" />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Проєкт Prime</h2>
+                  <p class="portfolio__app">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-5.jpg"
+                    alt="Дві пакувальні коробочки, одна біла, друга кольору крафтової бумаги"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Проєкт Boxes</h2>
+                  <p class="portfolio__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-6.jpg"
+                    alt="Монітор Apple з відкритою сторінкою сайту"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                  <p class="portfolio__app">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img src="./images/portfolio-7.jpg" alt="Розворот журналу" width="370" />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Видання Limited Edition</h2>
+                  <p class="portfolio__app">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-8.jpg"
+                    alt="Бирка крупним планом з назвою проекту"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу.
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Проєкт LAB</h2>
+                  <p class="portfolio__app">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="" class="link portfolio__link">
+                <div class="portfolio__overlay-box">
+                  <img
+                    src="./images/portfolio-9.jpg"
+                    alt="Людина працює за ноутбуком з відкритим додатком"
+                    width="370"
+                  />
+                  <!-- Оверлей на картку -->
+                  <p class="portfolio__overlay-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
+                    особу. 
+                  </p>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__title">Growing Business</h2>
+                  <p class="portfolio__app">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <!-- Контакты футер -->
+        <div class="contacts-footer">
+          <!-- Логоптип -->
+          <a class="logo" href="./index.html">Web<span class="logo__part logo__part--whitetext">Studio</span></a>
+
+          <address class="contacts-footer__address">
+            <ul class="list">
+              <li class="contacts-footer__item">
+                <a
+                  class="link contacts-footer__link contacts-footer__link--map"
+                  href="https://goo.gl/maps/qfrqZfhQBMbcRvhk7"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="contacts-footer__item">
+                <a class="link contacts-footer__link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-footer__item">
+                <a class="link contacts-footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- Приєднуйтесь-соцмережі -->
+        <div class="socials-box">
+          <b class="page-footer__subtitle">Приєднуйтесь</b>
+
+          <ul class="list socials">
+            <li class="socials__item socials__item--color-footer">
+              <a class="link socials__link" href="" aria-label="Посилання на Instagram">
+                <svg class="socials__icon socials__icon--color-footer">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item socials__item--color-footer">
+              <a class="link socials__link" href="" aria-label="Посилання на Twitter">
+                <svg class="socials__icon socials__icon--color-footer">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item socials__item--color-footer">
+              <a class="link socials__link" href="" aria-label="Посилання на Facebook">
+                <svg class="socials__icon socials__icon--color-footer">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item socials__item--color-footer">
+              <a class="link socials__link" href="" aria-label="Посилання на Linkedin">
+                <svg class="socials__icon socials__icon--color-footer">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Форма підписки -->
+        <form class="form-footer">
+          <b class="page-footer__subtitle">Підпишіться на розсилку</b>
+          <input class="form-footer__input" type="email" name="email" placeholder="E-mail" />
+          <button class="button main-btn form-footer__btn" type="submit">
+            Підписатися
+            <svg class="form-footer__btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

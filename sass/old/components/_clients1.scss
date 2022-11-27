@@ -1,0 +1,33 @@
+/* Клієнти */
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $card-gap;
+}
+
+.clients__item {
+    flex-basis: calc((100% - var(--card-gap) * 5) / 6);
+}
+
+.clients__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include centered-flex ($jc: center);
+    width: 170px;
+    height: 92px;
+
+    color: $socials-icon;
+    border: 1px solid $socials-icon;
+    border-radius: $border-radius;
+
+    &:hover, &:focus{
+            color: $link-color;
+            border: 1px solid $link-color;
+        }
+}
+
+.clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+}

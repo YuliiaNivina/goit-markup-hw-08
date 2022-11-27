@@ -1,0 +1,48 @@
+@mixin transition ($property, $duration:250ms, $timing:cubic-bezier(0.4, 0, 0.2, 1)) {
+    transition: $property $duration $timing;
+}
+
+@mixin centered-flex($type: flex, $ai: center, $jc: false) {
+    display: $type;
+    align-items: $ai;
+
+    @if $jc {
+        justify-content: $jc;
+    }
+}
+
+@mixin media ($size, $type: min) {
+    @if $size ==mobile {
+        $width: 480px; 
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+        
+        @media screen and (#{$type}-width: $width) {
+                    @content;
+        }
+    }
+
+    @else if $size ==tablet {
+        $width: 768px;
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+
+    @else if $size ==descktop {
+        $width: 1200px;
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+        @media screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
