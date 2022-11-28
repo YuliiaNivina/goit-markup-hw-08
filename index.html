@@ -27,7 +27,10 @@
         <button class="mobile-menu__btn is-open button" type="button" data-menu-button>
           <svg class="mobile-menu__icon-btn" width="40" height="40">
             <use class="mobile-menu__btn--burger" href="./images/icons.svg#icon-mobil-menu"></use>
-            <use class="mobile-menu__btn--cross" href="./images/icons.svg#icon-mobil-menu-close"></use>
+            <use
+              class="mobile-menu__btn--cross"
+              href="./images/icons.svg#icon-mobil-menu-close"
+            ></use>
           </svg>
         </button>
 
@@ -71,26 +74,28 @@
 
           <!-- Соцмережі-мобільне меню -->
           <ul class="list mobile-socials">
-                  <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="" aria-label="Посилання на Instagram">Instagram
-                    </a>
-                  </li>
-                  <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="" aria-label="Посилання на Twitter">Twitter
-                    </a>
-                  </li>
-                  <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="" aria-label="Посилання на Facebook">Facebook
-                    </a>
-                  </li>
-                  <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="" aria-label="Посилання на Linkedin">LinkedIn
-                    </a>
-                  </li>
-                </ul>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="" aria-label="Посилання на Instagram"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="" aria-label="Посилання на Twitter"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="" aria-label="Посилання на Facebook"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-socials__item">
+              <a class="mobile-socials__link link" href="" aria-label="Посилання на Linkedin"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
         </div>
-
-        
       </div>
     </header>
 
@@ -292,12 +297,11 @@
           <h2 class="secondary-title">Наша команда</h2>
           <ul class="team list">
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-demjanenko.jpg"
-                alt="фото Ігоря Дем'яненко"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-demjanenko.webp 1x, ./images/team-demjanenko@2x.webp 2x" type="image/webp" />
+                <source srcset="./images/team-demjanenko.jpg 1x, ./images/team-demjanenko@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-demjanenko.jpg" alt="фото Ігоря Дем'яненко"/>
+              </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Ігор Дем'яненко</h3>
                 <p class="team__member-position">Product Designer</p>
@@ -335,12 +339,11 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-repina.jpg"
-                alt="фото Ольгі Рєпіної"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-repina.webp 1x, ./images/team-repina@2x.webp 2x" type="image/webp" />
+                <source srcset="./images/team-repina.jpg 1x, ./images/team-repina@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-repina.jpg" alt="фото Ігоря Дем'яненко"/>
+              </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Ольга Рєпіна</h3>
                 <p class="team__member-position">Frontend Developer</p>
@@ -378,12 +381,11 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-tarasov.jpg"
-                alt="фото Миколи Тарасова"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-tarasov.webp 1x, ./images/team-tarasov@2x.webp 2x" type="image/webp" />
+                <source srcset="./images/team-tarasov.jpg 1x, ./images/team-tarasov@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-tarasov.jpg" alt="фото Ігоря Дем'яненко"/>
+              </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Микола Тарасов</h3>
                 <p class="team__member-position">Marketing</p>
@@ -421,12 +423,11 @@
             </li>
 
             <li class="team__item">
-              <img
-                class="team__foto"
-                src="./images/team-ermakov.jpg"
-                alt="фото Михайла Єрмакова"
-                width="270"
-              />
+              <picture>
+                <source srcset="./images/team-ermakov.webp 1x, ./images/team-ermakov@2x.webp 2x" type="image/webp" />
+                <source srcset="./images/team-ermakov.jpg 1x, ./images/team-ermakov@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-ermakov.jpg" alt="фото Ігоря Дем'яненко"/>
+              </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Михайло Єрмаков</h3>
                 <p class="team__member-position">UI Designer</p>

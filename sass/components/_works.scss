@@ -1,0 +1,6 @@
+/* Чим ми займаємося */
+.section-works {
+    @include media (tablet, max){
+        display: none;
+    }
+}

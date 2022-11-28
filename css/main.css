@@ -71,6 +71,13 @@ img {
   color: currentColor;
 }
 
+.secondary-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+}
+
 .visually-hidden, .form-checkbox__input {
   position: absolute;
   width: 1px;
@@ -713,4 +720,244 @@ img {
 .benefits__text {
   color: #757575;
   line-height: 1.71;
+}
+
+/* Чим ми займаємося */
+@media screen and (max-width: 767px) {
+  .section-works {
+    display: none;
+  }
+}
+
+/* Команда */
+.section-team {
+  text-align: center;
+  background-color: #f5f4fa;
+}
+
+.team__item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__info {
+  padding: 30px 0 24px;
+}
+
+.team__member-name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__member-position {
+  margin-bottom: 16px;
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Соцмережі */
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socials__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+}
+.socials__link:hover, .socials__link:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.socials__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Клієнти */
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
+}
+
+.clients__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 210px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients__link:hover, .clients__link:focus {
+  color: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+/* Футер */
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.page-footer__subtitle {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Контакти футер */
+@media screen and (max-width: 1199px) {
+  .contacts-footer {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts-footer__address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contacts-footer__link {
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+}
+.contacts-footer__link--map {
+  color: #ffffff;
+  line-height: 1.71;
+}
+.contacts-footer__link:hover, .contacts-footer__link:focus {
+  color: #2196f3;
+}
+
+/* Приєднуйтесь-соцмережі */
+@media screen and (max-width: 1199px) {
+  .socials-box {
+    margin-bottom: 60px;
+  }
+}
+
+.socials__item--color-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socials__icon--color-footer {
+  fill: #ffffff;
+}
+
+/* Форма підписки */
+.form-footer__input {
+  padding: 15px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-footer__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 1199px) {
+  .form-footer__input {
+    margin-bottom: 20px;
+  }
+}
+
+.form-footer__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-footer__btn-icon {
+  margin-left: 10px;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

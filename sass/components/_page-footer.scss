@@ -1,0 +1,98 @@
+/* Футер */
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2f303a;
+    text-align: center;
+}
+
+.page-footer__subtitle {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $main-white-color;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+/* Контакти футер */
+.contacts-footer {
+    @include media(descktop, max){
+        margin-bottom: 60px;
+    }
+}
+
+.contacts-footer__address {
+    margin-top: 20px;
+
+    font-style: normal;
+}
+
+.contacts-footer__item:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.contacts-footer__link {
+    @include transition (color);
+
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.71;
+
+    &--map {
+        color: $main-white-color;
+        line-height: 1.71;
+    }
+
+    &:hover,
+    &:focus {
+        color: $link-color;
+    }
+}
+
+/* Приєднуйтесь-соцмережі */
+.socials-box {
+    @include media(descktop, max) {
+        margin-bottom: 60px;
+    }
+}
+
+.socials__item--color-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.socials__icon--color-footer {
+    fill: $main-white-color;
+}
+
+/* Форма підписки */
+.form-footer__input {
+    padding: 15px;
+    width: 100%;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    @include media(descktop, max) {
+        margin-bottom: 20px;
+    }
+}
+
+.form-footer__btn {
+    @include centered-flex (inline-flex, $jc: center)
+}
+
+.form-footer__btn-icon {
+    margin-left: 10px;
+    fill: currentColor;
+}

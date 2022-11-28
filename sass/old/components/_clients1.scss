@@ -6,7 +6,7 @@
 }
 
 .clients__item {
-    flex-basis: calc((100% - var(--card-gap) * 5) / 6);
+    flex-basis: calc((100% - $card-gap * 5) / 6);
 }
 
 .clients__link {

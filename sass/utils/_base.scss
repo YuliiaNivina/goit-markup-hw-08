@@ -71,3 +71,11 @@ img {
     text-decoration: none;
     color: currentColor;
 }
+
+.secondary-title {
+    margin-bottom: $card-gap;
+
+    font-size: 28px;
+    line-height: decimal-round(33px / 28px);
+    text-align: center;
+}
