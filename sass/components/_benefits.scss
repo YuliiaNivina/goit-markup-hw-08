@@ -3,10 +3,21 @@
     @extend %visually-hidden
 }
 
-.benefits__item:not(:last-child) {
-    @include media (tablet, max){
-        margin-bottom: $card-gap;
+.benefits {
+    @include media (tablet){
+        display: flex;
+        flex-wrap: wrap;
+        gap: $card-gap;
     } 
+}
+
+.benefits__item{
+    &:not(:last-child) {
+       @include media (tablet, max) {
+           margin-bottom: $card-gap;
+       }
+    }
+    flex-basis: calc((100% - $card-gap) / 2);
 }
 
 .benefits__icon-box {
@@ -48,7 +59,6 @@
     &--back {
         transform: rotateX(180deg);
 
-        font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         background-color: $background-gray;

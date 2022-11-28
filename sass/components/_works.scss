@@ -1,6 +1,6 @@
 /* Чим ми займаємося */
 .section-works {
-    @include media (tablet, max){
+    @include media (descktop, max){
         display: none;
     }
 }

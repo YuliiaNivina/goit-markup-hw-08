@@ -5,6 +5,19 @@
 
     background-color: #2f303a;
     text-align: center;
+
+    // @media screen and (min-width: 768px) and (max-width: 1199px) {
+    //     padding-left: 86px;
+    //     padding-right: 86px;
+    // }
+}
+
+.page-footer__container{
+    @include media (tablet){
+        @include centered-flex ($ai: baseline, $jc: center);
+            flex-wrap: wrap;
+    }
+    
 }
 
 .page-footer__subtitle {
@@ -21,6 +34,12 @@
     @include media(descktop, max){
         margin-bottom: 60px;
     }
+
+    @include media (tablet){
+        margin-right: 170px;
+    }
+    
+        
 }
 
 .contacts-footer__address {
@@ -55,6 +74,8 @@
     @include media(descktop, max) {
         margin-bottom: 60px;
     }
+
+        // margin-left: auto;
 }
 
 .socials__item--color-footer {
