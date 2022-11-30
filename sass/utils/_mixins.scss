@@ -36,7 +36,7 @@
         }
     }
 
-    @else if $size ==descktop {
+    @else if $size ==desktop {
         $width: 1200px;
         @if $type ==max {
             $width: $width - 1px;

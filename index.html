@@ -262,29 +262,35 @@
           <h2 class="secondary-title">Чим ми займаємося</h2>
           <ul class="works list">
             <li class="works__item">
-              <img
-                src="./images/work-example-1.jpg"
-                alt="Програміст працює на своєму робочому місці в офісі"
-                width="370"
-              />
+              <picture>
+                <source 
+                srcset="./images/work-example-1.webp 1x, ./images/work-example-1@2x.webp 2x" type="image/webp" />
+                <source
+                srcset="./images/work-example-1.jpg 1x, ./images/work-example-1@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/work-example-1.jpg" alt="Програміст працює на своєму робочому місці в офісі" width="370" height="294" loading="lazy"/>
+              </picture>
               <p class="works__text">Десктопні додатки</p>
             </li>
 
             <li class="works__item">
-              <img
-                src="./images/work-example-2.jpg"
-                alt="Веб-дизайнер розробляє інтерфейс мобільного додатку за своїм ноутбуком"
-                width="370"
-              />
+              <picture>
+                <source 
+                srcset="./images/work-example-2.webp 1x, ./images/work-example-2@2x.webp 2x" type="image/webp" />
+                <source
+                srcset="./images/work-example-2.jpg 1x, ./images/work-example-2@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/work-example-2.jpg" alt="Веб-дизайнер розробляє інтерфейс мобільного додатку за своїм ноутбуком" width="370" height="294" loading="lazy"/>
+              </picture>
               <p class="works__text">Мобільні додатки</p>
             </li>
 
             <li class="works__item">
-              <img
-                src="./images/work-example-3.jpg"
-                alt="Веб-дизайнер обирає кольори на графічному планшеті"
-                width="370"
-              />
+              <picture>
+                <source 
+                srcset="./images/work-example-3.webp 1x, ./images/work-example-3@2x.webp 2x" type="image/webp" />
+                <source
+                srcset="./images/work-example-3.jpg 1x, ./images/work-example-3@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/work-example-3.jpg" alt="Веб-дизайнер обирає кольори на графічному планшеті" width="370" height="294" loading="lazy"/>
+              </picture>
               <p class="works__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -298,11 +304,25 @@
           <ul class="team list">
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-tab-demjanenko.webp 1x, ./images/team-tab-demjanenko@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-tab-demjanenko.jpg 1x, ./images/team-tab-demjanenko@2x.jpg 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-mob-demjanenko.webp 1x, ./images/team-mob-demjanenko@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="./images/team-mob-demjanenko.jpg 1x, ./images/team-mob-demjanenko@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-                <img src="./images/team-mob-demjanenko.jpg" alt="фото Ігоря Дем'яненко"/>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-demjanenko.webp 1x, ./images/team-desk-demjanenko@2x.webp 2x" type="image/webp" />
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-demjanenko.jpg 1x, ./images/team-desk-demjanenko@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-demjanenko.webp 1x, ./images/team-tab-demjanenko@2x.webp 2x" type="image/webp" />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-demjanenko.jpg 1x, ./images/team-tab-demjanenko@2x.jpg 2x" type="image/jpeg" />
+                <source
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-demjanenko.webp 1x, ./images/team-mob-demjanenko@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-demjanenko.jpg 1x, ./images/team-mob-demjanenko@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-mob-demjanenko.jpg" alt="фото Ігоря Дем'яненко" width="450" height="460" loading="lazy"/>
               </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Ігор Дем'яненко</h3>
@@ -342,11 +362,25 @@
 
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-tab-repina.webp 1x, ./images/team-tab-repina@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-tab-repina.jpg 1x, ./images/team-tab-repina@2x.jpg 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-mob-repina.webp 1x, ./images/team-mob-repina@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="./images/team-mob-repina.jpg 1x, ./images/team-mob-repina@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-                <img src="./images/team-mob-repina.jpg" alt="фото Ольги Рєпіної"/>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-repina.webp 1x, ./images/team-desk-repina@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-repina.jpg 1x, ./images/team-desk-repina@2x.jpg 2x" type="image/jpeg" />
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-repina.webp 1x, ./images/team-tab-repina@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-repina.jpg 1x, ./images/team-tab-repina@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-repina.webp 1x, ./images/team-mob-repina@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-repina.jpg 1x, ./images/team-mob-repina@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-mob-repina.jpg" alt="фото Ольги Рєпіної" width="450" height="460" loading="lazy"/>
               </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Ольга Рєпіна</h3>
@@ -386,11 +420,25 @@
 
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-tab-tarasov.webp 1x, ./images/team-tab-tarasov@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-tab-tarasov.jpg 1x, ./images/team-tab-tarasov@2x.jpg 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-mob-tarasov.webp 1x, ./images/team-mob-tarasov@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="./images/team-mob-tarasov.jpg 1x, ./images/team-mob-tarasov@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-                <img src="./images/team-mob-tarasov.jpg" alt="фото Миколи Тарасова"/>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-tarasov.webp 1x, ./images/team-desk-tarasov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-tarasov.jpg 1x, ./images/team-desk-tarasov@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-tarasov.webp 1x, ./images/team-tab-tarasov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-tarasov.jpg 1x, ./images/team-tab-tarasov@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-tarasov.webp 1x, ./images/team-mob-tarasov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-tarasov.jpg 1x, ./images/team-mob-tarasov@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-mob-tarasov.jpg" alt="фото Миколи Тарасова" width="450" height="460" loading="lazy"/>
               </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Микола Тарасов</h3>
@@ -430,11 +478,25 @@
 
             <li class="team__item">
               <picture>
-                <source srcset="./images/team-tab-ermakov.webp 1x, ./images/team-tab-ermakov@2x.webp 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-tab-ermakov.jpg 1x, ./images/team-tab-ermakov@2x.jpg 2x" media="(min-width: 768px)" type="image/webp" />
-                <source srcset="./images/team-mob-ermakov.webp 1x, ./images/team-mob-ermakov@2x.webp 2x" media="(max-width: 767px)" type="image/webp" />
-                <source srcset="./images/team-mob-ermakovv.jpg 1x, ./images/team-mob-ermakov@2x.jpg 2x" media="(max-width: 767px)" type="image/jpeg" />
-                <img src="./images/team-mob-ermakovv.jpg" alt="фото Михайла Єрмакова"/>
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-ermakov.webp 1x, ./images/team-desk-ermakov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 1200px)"
+                srcset="./images/team-desk-ermakov.jpg 1x, ./images/team-desk-ermakov@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-ermakov.webp 1x, ./images/team-tab-ermakov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(min-width: 768px)"
+                srcset="./images/team-tab-ermakov.jpg 1x, ./images/team-tab-ermakov@2x.jpg 2x" type="image/jpeg" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-ermakov.webp 1x, ./images/team-mob-ermakov@2x.webp 2x" type="image/webp" />
+                <source 
+                media="(max-width: 767px)"
+                srcset="./images/team-mob-ermakovv.jpg 1x, ./images/team-mob-ermakov@2x.jpg 2x" type="image/jpeg" />
+                <img src="./images/team-mob-ermakovv.jpg" alt="фото Михайла Єрмакова" width="450" height="460" loading="lazy"/>
               </picture>
               <div class="team__info">
                 <h3 class="team__member-name">Михайло Єрмаков</h3>

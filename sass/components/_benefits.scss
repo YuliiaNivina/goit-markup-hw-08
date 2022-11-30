@@ -18,6 +18,10 @@
        }
     }
     flex-basis: calc((100% - $card-gap) / 2);
+
+    @include media (desktop){
+        flex-basis: calc((100% - $card-gap * 3) / 4);
+    }
 }
 
 .benefits__icon-box {
