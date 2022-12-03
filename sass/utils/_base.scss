@@ -44,7 +44,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 
-@include media(mobile) {
+  @include media(mobile) {
     width: 480px;
   }
 
@@ -77,9 +77,16 @@ img {
 }
 
 .secondary-title {
-  margin-bottom: $card-gap;
+  @include media(desktop, max) {
+    margin-bottom: $card-gap;
 
-  font-size: 28px;
-  line-height: decimal-round(33px / 28px);
+    font-size: 28px;
+    line-height: decimal-round(33px / 28px);
+  }
+
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
 }

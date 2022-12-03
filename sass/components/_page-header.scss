@@ -25,7 +25,7 @@
 
 .navigation {
   @include media(tablet, max) {
-    margin-bottom: 302px;
+    margin-bottom: auto;
   }
   font-weight: 500;
   font-size: 40px;
@@ -33,21 +33,23 @@
   letter-spacing: 0.02em;
 
   @include media(tablet) {
+    margin-left: 88px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: decimal-round(16px / 14px);
     letter-spacing: 0.02em;
   }
+
+    @include media(desktop) {
+      margin-left: 93px;
+    }
 }
 
 .navigation__list {
   @include media(tablet) {
     display: flex;
     gap: 50px;
-  }
-
-  @include media(desktop) {
-    margin-left: 93px;
   }
 }
 
@@ -120,7 +122,7 @@
       order: 1;
     }
 
-    @include media(tablet) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 10px;
     }
   }
